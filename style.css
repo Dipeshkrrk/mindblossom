@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+.protest-revolution-regular {
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+body{
+    margin: 0;
+    padding:0;
+}
+.nav{
+    background-color: rgba(0,0,0,.7);
+    height: 7vh;
+    width:100vw;
+    display: flex;
+    align-items: center;
+}
+.nav img{
+    height: 50px;
+}
+.banner{
+    background-image: url("group.jpg");
+    height: 93vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+  }
+  .background{
+    position: relative;
+    top: 0;
+    left: 0;
+    height:93vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,.7);
+    /* opacity: 0.5; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(240, 240, 240);
+    gap:  2rem;
+    text-align: center;
+}
+.background h1{
+    padding: 0 15vw;
+    font-size: 5vw;
+    margin: 0;
+}
+.background p{
+    padding: 0 10vw;
+    font-size: 1.5vw;
+    margin: 0;
+}
+
+.Btn {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
+    background-size: 250%;
+    background-position: left;
+    color: #ffd277;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: 1s;
+    overflow: hidden;
+  }
+  
+  .Btn::before {
+    position: absolute;
+    content: "JOIN NOW";
+    color: #ffd277;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97%;
+    height: 90%;
+    border-radius: 8px;
+    transition-duration: 1s;
+    background-color: rgba(0, 0, 0, 0.842);
+    background-size: 200%;
+  }
+  
+  .Btn:hover {
+    background-position: right;
+    transition-duration: 1s;
+  }
+  
+  .Btn:hover::before {
+    background-position: right;
+    transition-duration: 1s;
+  }
+  
+  .Btn:active {
+    transform: scale(0.95);
+  }
+
+  .fa-solid{
+    font-size: 2vw;
+    animation: dropdown infinite ease-in-out;
+  }
+
+  @keyframes dropdown {
+  }
+  .layout{
+    height: 90vh;
+    width: 80vw;
+    /* background-color: #77530a; */
+    /* background-image: linear-gradient(url("group.jpg"),#77530a); */
+    background-color: whitesmoke;
+    padding: 5vw 10vw;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: .5rem;
+  }
+  .box{
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+
+  }
+  .box:hover{
+    font-size: larger;
+  }
+  .alt{
+    background-image: url("community.jpg");
+    background-size:auto;
+  }
+  .alt:hover{
+    background-size: cover;
+  }
+  
+  .box p{
+    padding: 20px;
+  }
+  .core-members{
+    background-image: linear-gradient(#77530a,#3f2b01, #00030c);
+    /* background-color: whitesmoke; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    height: 50  vh;
+    width: 100vw;
+    padding: 10vh 0;
+    /* gap: .1rem; */
+    overflow-x: hidden;
+  }
+  .name{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Sundar_Pichai_%282023%29_cropped.jpg/800px-Sundar_Pichai_%282023%29_cropped.jpg");
+    background-size: cover;
+    background-position: center;
+    /* background-color: bisque; */
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    opacity: .8;
+    border: white  solid thin;
+  }
+  .name:hover {
+    opacity:  1;
+    font-size: larger;
+    box-shadow: 0 0 50px 15px #f1c669;
+  }
+  .name h1{
+    color: aliceblue;
+  }
+  .name h1:hover{
+    /* box-shadow: 0 0 50px 15px #ffffff; */
+  }
+  
