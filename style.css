@@ -198,15 +198,7 @@ body{
     padding: 20px;
   }
   .core-members{
-<<<<<<< HEAD
-    background-color: #d1c8c1;
-=======
-    background-image: linear-gradient(#77530a,#3f2b01, #00030c);
-    /* background-color: whitesmoke; */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     height: 50  vh;
->>>>>>> parent of 1c8c61a (Update style.css)
     width: 100vw;
   }
   .name{
