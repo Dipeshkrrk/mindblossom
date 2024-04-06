@@ -238,14 +238,7 @@ body{
   .hover-ease-in{
     transition: all .3s ease-in;
   }
-<<<<<<< HEAD
   marquee{
     width:100vw;
   }
-
-  /* 1. makeing the core member div move properly 
-  2. to include hover ease in effect in the images of the div
-   */
-=======
   
->>>>>>> parent of 1c8c61a (Update style.css)
