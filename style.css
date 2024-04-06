@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+.protest-revolution-regular {
+    /* font-family: "Protest Revolution", sans-serif; */
+    font-weight: 900;
+    font-style: normal;
+  }  
+body{
+    margin: 0;
+    padding:0;
+}
+.nav{
+    background-color:transparent;
+    /* background-color: rgba(32,54,82, 0.7); */
+    /* background-color: rgba(32,54,82,.7); */
+    /* background-color: #203653; */
+    height: 7vh;
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+.right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 3vw;
+  gap: 4em;
+  font-size: 1.45rem;
+  color: whitesmoke;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+}
+.nav img{
+    height: 45px;
+    padding: 10px;
+}
+.banner{
+    background-image: url("MHA.jpeg");
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position:bottom;
+    z-index: -1;
+  }
+.gradient{
+    position: absolute; left: 0; top: 0; height: 100vh; width: 100%;
+    background-image: linear-gradient(to top,rgb(0, 0, 0) 10%, rgba(0, 0, 0, 0.3) 30%, transparent 50%);
+    z-index: -1;
+}
+  .background{
+    position: relative;
+    top: 0;
+    left: 0;
+    height:93vh;
+    width: 100vw;
+    /* background-color: rgba(107,129,157, 0.7); */
+    /* background-color: rgba(32,54,82, 0.5); */
+    /* opacity: 0.5; */
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    align-items:center;
+    color: rgb(240, 240, 240);
+    gap:  1rem;
+    text-align: center;
+}
+.background h1{
+    padding: 0 10vw;
+    font-size: 5vw;
+    margin: 0;
+}
+.background p{
+    padding: 0 10vw;
+    font-size: 1.5vw;
+    margin: 0;
+}
+
+.Btn {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
+    background-size: 250%;
+    background-position: left;
+    color: #ffd277;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: 1s;
+    overflow: hidden;
+  }
+  
+  .Btn::before {
+    position: absolute;
+    content: "JOIN NOW";
+    color: #ffd277;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97%;
+    height: 90%;
+    border-radius: 8px;
+    transition-duration: 1s;
+    background-color: rgba(0, 0, 0, 0.842);
+    background-size: 200%;
+  }
+  
+  .Btn:hover {
+    background-position: right;
+    transition-duration: 1s;
+  }
+  
+  .Btn:hover::before {
+    background-position: right;
+    transition-duration: 1s;
+  }
+  
+  .Btn:active {
+    transform: scale(0.95);
+  }
+
+  .fa-solid{
+    font-size: 2vw;
+    animation: dropdown infinite ease-in-out;
+  }
+
+  @keyframes dropdown {
+  }
+  .layout{
+    height: 90vh;
+    width: 80vw;
+    /* background-color: #77530a; */
+    /* background-image: linear-gradient(url("group.jpg"),#77530a); */
+    /* background-color: whitesmoke; */
+    /* background-color: #203653; */
+    /* background-color: black; */
+    background-color: #fff;
+    padding: 5vw 10vw;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: .5rem;
+  }
+  .box{
+    /* background-color: #6b819d; */
+    background-color: #b4d3f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+
+  }
+  .box:hover{
+    font-size: 1.5rem;
+  }
+  .alt1{
+    background-image: url("arttherapy.jpeg");
+    background-size:cover;
+    background-position: center;
+  }
+  .alt2{
+    background-image: url("happinessbootcamp.jpeg");
+    background-size:cover;
+    background-position: center;
+  }
+  .alt3{
+    background-image: url("group.jpg");
+    background-size:cover;
+    background-position: center;
+  }
+  .alt4{
+    background-image: url("MHA.jpeg");
+    background-size:cover;
+    background-position: center;
+  }
+  .alt5{
+    background-image: url("therapyidice.jpeg");
+    background-size:cover;
+    background-position: center;
+  }
+  .alt6{
+    background-image: url("sonnetSymphony.jpeg");
+    background-size:cover;
+    background-position: center;
+  }
+  background-position: center;
+  .alt:hover{
+    background-size: cover;
+  }
+  
+  .box p{
+    padding: 20px;
+  }
+  .core-members{
+<<<<<<< HEAD
+    background-color: #d1c8c1;
+=======
+    background-image: linear-gradient(#77530a,#3f2b01, #00030c);
+    /* background-color: whitesmoke; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    height: 50  vh;
+>>>>>>> parent of 1c8c61a (Update style.css)
+    width: 100vw;
+  }
+  .name{
+    /* background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Sundar_Pichai_%282023%29_cropped.jpg/800px-Sundar_Pichai_%282023%29_cropped.jpg"); */
+    background-image: url("https://www.shutterstock.com/image-vector/person-gray-photo-placeholder-man-260nw-1265729962.jpg");
+    background-size: cover;
+    background-position: center;
+    /* background-color: bisque; */
+    /* display: flex;
+    justify-content: center;
+    align-items: end; */
+    display: inline-block;
+    height: 60vh;
+    width: 25vw;
+    opacity: .8;
+    border: #f6f4f3 solid thin;
+  }
+  .name:hover {
+    opacity:  1;
+    font-size: larger;
+    box-shadow: 0 0 50px 15px #b08b7e;
+  }
+  .name h1{
+    color: #f6f4f3;
+  }
+  /* .name h1:hover{ */
+    /* box-shadow: 0 0 50px 15px #ffffff; */
+  /* } */
+  .hover-ease-in{
+    transition: all .3s ease-in;
+  }
+<<<<<<< HEAD
+  marquee{
+    width:100vw;
+  }
+
+  /* 1. makeing the core member div move properly 
+  2. to include hover ease in effect in the images of the div
+   */
+=======
+  
+>>>>>>> parent of 1c8c61a (Update style.css)
