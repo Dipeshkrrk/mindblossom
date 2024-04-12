@@ -7,6 +7,8 @@
 body{
     margin: 0;
     padding:0;
+    background-color: whitesmoke;
+    /* overflow-x: hidden; */
 }
 .nav{
     background-color:transparent;
@@ -140,12 +142,13 @@ body{
     /* background-color: whitesmoke; */
     /* background-color: #203653; */
     /* background-color: black; */
-    background-color: #fff;
+    background-color: whitesmoke;
     padding: 5vw 10vw;
     display: grid;
     grid-template-columns:  1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: .5rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
   .box{
     /* background-color: #6b819d; */
@@ -188,9 +191,7 @@ body{
     background-image: url("sonnetSymphony.jpeg");
     background-size:cover;
     background-position: center;
-  }
-  background-position: center;
-  .alt:hover{
+  }.alt:hover{
     background-size: cover;
   }
   
@@ -198,15 +199,7 @@ body{
     padding: 20px;
   }
   .core-members{
-<<<<<<< HEAD
-    background-color: #d1c8c1;
-=======
-    background-image: linear-gradient(#77530a,#3f2b01, #00030c);
-    /* background-color: whitesmoke; */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    height: 50  vh;
->>>>>>> parent of 1c8c61a (Update style.css)
+    height: 50vh;
     width: 100vw;
   }
   .name{
@@ -238,14 +231,65 @@ body{
   .hover-ease-in{
     transition: all .3s ease-in;
   }
-<<<<<<< HEAD
   marquee{
     width:100vw;
   }
-
-  /* 1. makeing the core member div move properly 
-  2. to include hover ease in effect in the images of the div
-   */
-=======
-  
->>>>>>> parent of 1c8c61a (Update style.css)
+  .carousel{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+  }
+  .blog-section{
+    width: 100vw;
+    margin-top:25vh;
+    /* padding-left: 13vw; */
+    padding-bottom: 10px;
+    overflow-x: auto;
+  }
+  .blog{
+    /* position: absolute; */
+    /* display: flex;
+    flex-direction: column; */
+    /* transition: transform 0.2s ease-in-out 0s; */
+  }
+  .scroll{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+  }
+.left-scroll , .right-scroll{
+  border-radius: 50%;
+  background-color: #b4d3f8;
+  color:  black;
+  font-size: 30px;
+}
+.swiper {
+  margin-top: 20vh;
+  width: 90vw;
+  height: 60vh;
+  .image{
+    height: 45vh;
+    width:100%;
+    background-image: url("group.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+  }
+  .topic{
+    font-size: 2rem;
+    height: 15vh;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    .one{
+    }
+    .two{
+    }
+    .three{
+    }
+}
