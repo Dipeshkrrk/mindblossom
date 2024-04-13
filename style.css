@@ -179,6 +179,9 @@ nav img{
   .intro h2{
     font-size: 2rem !important;
   }
+  .intro-element p{
+    font-size: 1.2rem !important;
+  }
 }
 @media only screen and (max-width: 550px) {
   nav img {
@@ -222,7 +225,7 @@ nav img{
     gap: 2vh !important;
   }
   .intro h2{
-    font-size: 1.9rem !important;
+    font-size: 7.5vw !important;
     margin: 0;
   }
   .intro-element{
@@ -422,7 +425,7 @@ nav img{
   font-size: larger;
 }
 .char{
-  background-color: rgba(245, 245, 245, 0.68);
+  background-color: #1c1c1c;
   border-radius: 10px;
   padding: 1vh;
   width:25vw;
