@@ -81,6 +81,11 @@ nav img{
     height: 45px;
     padding: 5px;
 }
+@media only screen and (max-width: 970px) {
+  .alt3{
+    background-position: 0 -3vh !important;
+  }
+}
 @media only screen and (max-width: 769px) {
   .background{
     justify-content: center !important;
@@ -95,6 +100,12 @@ nav img{
   .Btn{
     width: 15vw !important;
     height: 7vh !important;
+  }
+  .alt3{
+    background-position: center !important;
+  }
+  .name {
+    width: 33.3vw !important;
   }
 }
 @media only screen and (max-width: 550px) {
@@ -111,16 +122,15 @@ nav img{
   .background h1{
     font-size: 8vw !important;
   }
-  .gradient1{
-    background-color: #000000;
-    opacity: .5;
-  }
   .gradient2{
     background-image: linear-gradient(to bottom,rgb(0, 0, 0) 10%, rgba(0, 0, 0, 0.3) 30%, transparent 50%);
   }
   .Btn{
     width: 18vw !important;
     height: 7vh !important;
+  }
+  .name {
+    width: 50vw !important;
   }
 }
 @media only screen and (max-width: 470px) {
@@ -146,6 +156,9 @@ nav img{
   .Btn{
     width: 35vw !important;
     height: 5vh !important;
+  }
+  .name {
+    width: 90vw !important;
   }
 }
 @media only screen and (max-width: 360px) {
@@ -256,12 +269,29 @@ nav img{
   .fa-solid{
     font-size: 2vw;
     animation: dropdown infinite ease-in-out;
-  }
-
+}
+.topic{
+  display: flex;
+  justify-content: center;
+  align-items:end;
+  height:11vw;
+  color: whitesmoke;
+  font-size:2.5vw;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.topic h2{
+  margin: 0;
+}
+.highlighted{
+  color: white;
+  background-color: #FE320A;
+  padding: 0 2px;
+  margin: 0 .3em !important;
+  align-self: end;
+}
   
   .layout{
     overflow: hidden;
-    height: 90vh;
     width: 80vw;
     /* background-color: #77530a; */
     /* background-image: linear-gradient(url("group.jpg"),#77530a); */
@@ -271,8 +301,8 @@ nav img{
     background-color: rgb(0, 0, 0);
     padding: 5vw 10vw;
     display: grid;
-    grid-template-columns:  1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns:  1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr; */
     gap: .5rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
@@ -288,7 +318,7 @@ nav img{
 
   }
   .box:hover{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
   .alt1{
     background-image: url("arttherapy.jpeg");
@@ -298,12 +328,12 @@ nav img{
   .alt2{
     background-image: url("happinessbootcamp.jpeg");
     background-size:cover;
-    background-position: center;
+    background-position: 0vh -2vh;
   }
   .alt3{
     background-image: url("group.jpg");
     background-size:cover;
-    background-position: center;
+    background-position: 0vh -5vh;
   }
   .alt4{
     background-image: url("MHA.jpeg");
@@ -318,9 +348,7 @@ nav img{
   .alt6{
     background-image: url("sonnetSymphony.jpeg");
     background-size:cover;
-    background-position: center;
-  }.alt:hover{
-    background-size: cover;
+    background-position: 0 -15vh;
   }
   
   .box p{
