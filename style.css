@@ -210,7 +210,7 @@ nav img{
     padding: 5vw 5vw !important;
   }
   .topic{
-    margin-top: 7vh !important;
+    margin-top: 20vh !important;
     flex-direction: column !important;
     font-size: 5.5vw !important;
     align-items: center !important;
@@ -254,9 +254,6 @@ nav img{
   }
   .box:hover{
     font-size: 1.25rem !important;
-  }
-  .topic{
-    margin-top: 13vh !important;
   }
   .char{
     padding:0 1.5vw;
