@@ -3,7 +3,61 @@
     /* font-family: "Protest Revolution", sans-serif; */
     font-weight: 500;
     font-style: normal;
-  }  
+  }
+  #loader{
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    transition: all ease 0.7s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#loader h1{
+    font-size: 4vw;
+    color: transparent;
+    background: linear-gradient(to right,orange,orangered);
+    -webkit-background-clip: text;
+    position: absolute;
+    opacity: 0;
+    animation-name: load;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+}
+#loader h1:nth-child(2){
+    animation-delay: 2s;
+}
+#loader h1:nth-child(3){
+    animation-delay: 3s;
+}
+
+@keyframes load {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@media (max-width:600px) {
+    #loader h1{
+        font-size: 9vw;
+      
+    }
+}  
 body{
     margin: 0;
     padding:0;
@@ -14,7 +68,7 @@ body{
   display: none;
 }
 nav { 
-  width: 100%;
+  width: 100vw;
   /* background-color: #000000; */
   display: flex;
   align-items: center;
@@ -24,22 +78,23 @@ nav {
   
 }
 #nav-part1{
-  background-color: #ffffff;
+  background-color: #ffffff93;
   border-radius: 10px;
 }
 #nav-part2 {
   display: flex;
   align-items: center;
   gap: 1vw;
+  margin: 1vw 2vw;
 }
 
 #nav-part2 h4 {
   margin: 0;
   padding: 10px 20px;
-  border: 1px solid #ffffff3c;
+  border: 1px solid #ffffff93;
   border-radius: 50px;
   font-weight: 500;
-  color: #ffffffbb;
+  color: #ffffff93;
   transition: all ease 0.4s;
   position: relative;
   font-size: 18px;
@@ -51,7 +106,7 @@ nav {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: #FE320A;
   left: 0;
   bottom: -100%;
   border-radius: 50%;
@@ -85,10 +140,14 @@ nav img{
   .alt3{
     background-position: 0 -3vh !important;
   }
+  .box:hover{
+    font-size: 1.25rem !important;
+  }
 }
 @media only screen and (max-width: 769px) {
   .background{
     justify-content: center !important;
+    gap: 1.5rem !important ;
   }
   .background h1{
     font-size: 8vw !important;
@@ -108,8 +167,17 @@ nav img{
     width: 33.3vw !important;
   }
   .topic{
+    margin-top: 5vh !important;
     font-size: 2.7vw !important;
     padding-top: 0 !important;
+  }
+  .intro{
+    gap: 0 !important;
+    height: 30vh !important;
+    justify-content: unset !important;
+  }
+  .intro h2{
+    font-size: 2rem !important;
   }
 }
 @media only screen and (max-width: 550px) {
@@ -135,15 +203,34 @@ nav img{
   }
   .name {
     width: 50vw !important;
+    height: 40vh !important;
   }
   .layout{
     width: 90vw !important;
     padding: 5vw 5vw !important;
   }
   .topic{
+    margin-top: 7vh !important;
     flex-direction: column !important;
     font-size: 5.5vw !important;
     align-items: center !important;
+  }
+  .box:hover{
+    font-size: 1.25rem !important;
+  }
+  .intro{
+    gap: 2vh !important;
+  }
+  .intro h2{
+    font-size: 1.9rem !important;
+    margin: 0;
+  }
+  .intro-element{
+    flex-direction: column;
+  }
+  .char{
+    width: 85vw !important;
+    height: auto !important;
   }
 }
 @media only screen and (max-width: 470px) {
@@ -161,11 +248,20 @@ nav img{
     font-size: 10vw !important;
   }
   .layout{
+    margin-top: 2vh !important;
     width: 100vw !important;
     padding: 5vw 0vw !important;
   }
+  .box:hover{
+    font-size: 1.25rem !important;
+  }
   .topic{
-
+    margin-top: 13vh !important;
+  }
+  .char{
+    padding:0 1.5vw;
+    width: 97vw !important;
+    height: auto !important;
   }
 }
 @media only screen and (max-width: 420px) {
@@ -186,6 +282,9 @@ nav img{
   .background h1{
     font-size: 11.5vw !important;
   }
+  .box:hover{
+    font-size: 1.25rem !important;
+  }
 }
 @media only screen and (max-width: 360px) {
   nav img {
@@ -194,6 +293,9 @@ nav img{
   #nav-part2 h4{
     font-size: 10px;
     padding: 7px 12px;
+  }
+  .box:hover{
+    font-size: 1.25rem !important;
   }
 }
 .banner{
@@ -292,9 +394,45 @@ nav img{
     transform: scale(0.80);
 }
 
-  .fa-solid{
-    font-size: 2vw;
+.fa-solid{
+    font-size: 3vw;
     animation: dropdown infinite ease-in-out;
+}
+.intro{
+  /* background-image: url(MHA.jpeg); */
+  height: 50vh;
+  width: 100vw;
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4vh;
+}
+.intro h2{
+  font-size:3vw;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.intro-element{
+  display: flex;
+  gap: 2vw;
+
+}
+.intro-element p{
+  padding: 0;
+  margin: 0;
+  font-size: larger;
+}
+.char{
+  background-color: rgba(245, 245, 245, 0.68);
+  border-radius: 10px;
+  padding: 1vh;
+  width:25vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
 }
 .topic{
   display: flex;
@@ -446,7 +584,7 @@ nav img{
   font-size: 30px;
 }
 .swiper {
-  margin-top: 20vh;
+  margin-top: 10vh;
   width: 90vw;
   height: 60vh;
   .image{

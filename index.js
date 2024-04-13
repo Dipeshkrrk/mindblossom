@@ -12,7 +12,12 @@
 //       prevEl: '.swiper-button-prev',
 //     }
 //   });
-
+function loaderAnimation() {
+  var loader = document.querySelector("#loader")
+  setTimeout(function () {
+      loader.style.top = "-100%"
+  }, 4200)
+}
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   loop: true,
@@ -33,3 +38,4 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-scrollbar',
   },
 });
+loaderAnimation()
