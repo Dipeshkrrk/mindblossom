@@ -260,7 +260,7 @@ nav img{
   }
   .char{
     padding:0 1.5vw;
-    width: 97vw !important;
+    width: 90vw !important;
     height: auto !important;
   }
 }
@@ -400,8 +400,9 @@ nav img{
 }
 .intro{
   /* background-image: url(MHA.jpeg); */
+  margin: 0 5vw;
   height: 50vh;
-  width: 100vw;
+  width: 90vw;
   color: rgb(255, 255, 255);
   font-size: 1.2rem;
   display: flex;
